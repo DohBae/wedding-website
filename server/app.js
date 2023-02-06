@@ -7,9 +7,14 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+// routes import
+const dogRoutes = require('./routes/dogRoutes');
+
 // middleware setup
 app.use(morgan(ENVIROMENT));
 app.use(bodyParser.json());
+
+app.use('/dogs', dogRoutes);
 
 
 app.get('/', (req, res) => {
