@@ -1,5 +1,5 @@
 import React from 'react';
-import { BroswerRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './hocs/Layout';
 import Home from './containers/Home';
 import QnA from './containers/QnA';
@@ -13,13 +13,16 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Route path='/' component={Home} />
-        <Route path='/qna' component={QnA} />
-        <Route path='/registry' component={Registry} />
-        <Route path='/rsvp' component={Rsvp} />
-        <Route path='/schedule' component={Schedule} />
-        <Route path='/travel' component={Travel} />
-        <Route path='/weddingparty' component={WeddingParty} />
+        <Routes>
+        <Route path='/' exact element={ <Home/> } />
+        <Route path='/qna' element={ <QnA/> } />
+        <Route path='/registry' element={ <Registry/> } />
+        <Route path='/rsvp' element={ <Rsvp/> } />
+        <Route path='/schedule' element={ <Schedule/> } />
+        <Route path='/travel' element={ <Travel/> } />
+        <Route path='/weddingparty' element={ <WeddingParty/> } />
+
+        </Routes>
       </Layout>
     </Router>
   );
