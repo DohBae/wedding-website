@@ -9,6 +9,8 @@ import Schedule from './containers/Schedule';
 import Travel from './containers/Travel';
 import WeddingParty from './containers/WeddingParty';
 
+import './sass/main.scss'
+
 function App() {
   return (
     <Router>

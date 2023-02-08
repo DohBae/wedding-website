@@ -1,3 +1,6 @@
 .navbar {
-  
+  background-color: #cccccc;
+  padding: 2rem 4rem; //because of the html stying in _base.js, the padding will be 20px on the top and bottom and 40px on the left and right.
+  height: 8rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }

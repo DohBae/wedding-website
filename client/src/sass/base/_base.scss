@@ -1,0 +1,18 @@
+// SASS that applies to everything
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// Default is 16px. 62.5% gives us a default of 10px. Allows us to more conveniently use the rem unit. 1rem = 10px.
+html {
+  font-size: 62.5%;
+}
+
+// Setting exact dimension for elements easier. Box-sizing allows manipulation of width and heights of elements and padding/border/margin that wont mess with width and height of the element itself.
+body {
+  box-sizing: border-box;
+}
