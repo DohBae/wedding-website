@@ -3,4 +3,31 @@
   padding: 2rem 4rem; //because of the html stying in _base.js, the padding will be 20px on the top and bottom and 40px on the left and right.
   height: 8rem;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+
+  // This is a way to do .navbar__list class
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none; //Remove bullets from list items
+    height: 100%;
+    padding: 0 4rem;
+
+    // .navbar__list__item
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__link {
+    color: #333;
+    text-decoration: none; //Remove underline under clickable elements
+
+    &:hover {
+      color: #777;
+    }
+  }
 }
