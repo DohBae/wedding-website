@@ -1,10 +1,13 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 
 const Navbar = ({ toggleSidebar }) => (
   <nav className='navbar'>
     <ul className='navbar__list'>
+      <Link className='navbar__logo' to='/'>
+        Bailee and Alexander
+      </Link>
       <li className='navbar__list__item'>
         <NavLink className='navbar__link' to='/'>
           Home
