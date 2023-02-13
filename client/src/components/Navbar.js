@@ -43,7 +43,7 @@ const Navbar = ({ toggleSidebar }) => (
           Registry
         </NavLink>
       </li>
-      <div className='navbar__button'>
+      <div className='navbar__button' onClick={toggleSidebar}>
         <div className='navbar__button__component'></div>
         <div className='navbar__button__component'></div>
         <div className='navbar__button__component'></div>

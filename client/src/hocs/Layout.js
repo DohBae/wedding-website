@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation';
 const Layout = ({ children }) => (
   <Fragment>
     <Navigation />
-    <div>
+    <div className='container' style={{ marginTop: '50px' }}>
       {children}
     </div>
   </Fragment>

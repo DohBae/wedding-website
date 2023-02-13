@@ -5,7 +5,7 @@ const Sidebar = ({
   isOpen,
   closeSidebar
 }) => {
-  const styles = isOpen ? 'sidebar side--open' : 'sidebar side--closed';
+  const styles = isOpen ? 'sidebar side--open' : 'sidebar sidebar--closed';
 
   return (
     <Fragment>

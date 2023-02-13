@@ -28,4 +28,9 @@ body {
 
 .active {
   color: #777 !important; //!important makes sure that styling is applied to nav links. Overwrites everying else.
+
+  @include respond(tab-port) {
+    background-color: #888 !important;
+    color: #333 !important;
+  }
 }
