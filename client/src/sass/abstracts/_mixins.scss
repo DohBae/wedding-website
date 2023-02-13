@@ -1,0 +1,26 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    // 37.5em is size of parent element(which is 16px), or max width of 600px. (16 x 37.5)
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    // Tablet in portrait mode, we want 900px or less. (900 / 16 for em unit)
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    // Tablet in landscape mode, we want 1200px or less. (1200 / 16 for em unit)
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    // Large desktop monitor, we want a minimum size of 1800px or greater. (1800 / 16 for em unit)
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
