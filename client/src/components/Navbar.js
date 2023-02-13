@@ -9,7 +9,7 @@ const Navbar = ({ toggleSidebar }) => (
         Bailee and Alexander
       </Link>
       <li className='navbar__list__item'>
-        <NavLink className='navbar__link' to='/'>
+        <NavLink className='navbar__link' exact to='/'>
           Home
         </NavLink>
       </li>
@@ -43,6 +43,11 @@ const Navbar = ({ toggleSidebar }) => (
           Registry
         </NavLink>
       </li>
+      <div className='navbar__button'>
+        <div className='navbar__button__component'></div>
+        <div className='navbar__button__component'></div>
+        <div className='navbar__button__component'></div>
+      </div>
     </ul>
   </nav>
 );

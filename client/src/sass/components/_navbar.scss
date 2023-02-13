@@ -19,6 +19,10 @@
       justify-content: center;
       align-items: center;
       font-size: 1.8rem;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
 
@@ -38,5 +42,37 @@
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
+  }
+
+  &__button {
+    display: none;
+
+    // Creating hamburger menu lines
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 65%;
+      margin: 17.5% 0;
+      width: 5rem;
+      cursor: pointer;
+
+      &:hover {
+        height: 70%;
+        margin: 15% 0;
+      }
+
+      &__component {
+        display: none;
+
+        @include respond(tab-port) {
+          display: block;
+          height: 0.3rem;
+          width: 100%;
+          background-color: #333;
+        }
+      }
+    }
   }
 }

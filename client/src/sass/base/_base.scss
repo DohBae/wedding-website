@@ -16,3 +16,16 @@ html {
 body {
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 114rem;
+  padding: 0 8rem;
+
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+}
+
+.active {
+  color: #777 !important; //!important makes sure that styling is applied to nav links. Overwrites everying else.
+}
