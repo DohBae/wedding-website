@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import PgLayout from './hocs/Layout';
+import Layout from './hocs/Layout';
 import Home from './containers/Home';
 import QnA from './containers/QnA';
 import Registry from './containers/Registry';
@@ -13,8 +13,10 @@ import './sass/main.scss'
 
 function App() {
   return (
+    <div>
+
     <Router>
-      <PgLayout>
+      <Layout>
         <Routes>
         <Route path='/' exact element={ <Home/> } />
         <Route path='/qna' element={ <QnA/> } />
@@ -24,8 +26,9 @@ function App() {
         <Route path='/travel' element={ <Travel/> } />
         <Route path='/weddingparty' element={ <WeddingParty/> } />
         </Routes>
-      </PgLayout>
+      </Layout>
     </Router>
+    </div>
   );
 }
 
