@@ -17,12 +17,22 @@
       padding: 2rem;
       margin: auto;
       margin-top: -68%;
+
+      @include respond(phone) {
+        height: 27rem;
+        width: 36rem;
+        margin-top: -134%;
+      }
     }
 
     &__p {
       display: flex;
       flex-wrap: wrap;
       margin: auto;
+
+      @include respond(phone) {
+        margin-top: -46%
+      }
     }
   }
   
