@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './hocs/Layout';
+import PgLayout from './hocs/Layout';
 import Home from './containers/Home';
 import QnA from './containers/QnA';
 import Registry from './containers/Registry';
@@ -14,7 +14,7 @@ import './sass/main.scss'
 function App() {
   return (
     <Router>
-      <Layout>
+      <PgLayout>
         <Routes>
         <Route path='/' exact element={ <Home/> } />
         <Route path='/qna' element={ <QnA/> } />
@@ -23,9 +23,8 @@ function App() {
         <Route path='/schedule' element={ <Schedule/> } />
         <Route path='/travel' element={ <Travel/> } />
         <Route path='/weddingparty' element={ <WeddingParty/> } />
-
         </Routes>
-      </Layout>
+      </PgLayout>
     </Router>
   );
 }

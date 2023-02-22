@@ -1,0 +1,27 @@
+
+.home-container {
+  // background-color: $container-background;
+  display: flex;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    &__img {
+      display: flex;
+      height: 40rem;
+      width: 60rem;
+      padding: 2rem;
+      margin: auto;
+    }
+
+    &__p {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+  }
+  
+}

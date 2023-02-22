@@ -1,13 +1,20 @@
 import React, { Fragment } from 'react';
+import { Layout } from 'antd';
 import Navigation from '../components/Navigation';
+const { Header } = Layout;
 
-const Layout = ({ children }) => (
-  <Fragment>
-    <Navigation />
-    <div className='container' style={{ marginTop: '50px' }}>
-      {children}
-    </div>
-  </Fragment>
+const PgLayout = ({ children }) => (
+  <Layout>
+    <Header>
+      <Fragment>
+        <Navigation />
+        <div className='container'>
+          {children}
+        </div>
+      </Fragment>
+    </Header>
+
+  </Layout>
 );
 
-export default Layout;
+export default PgLayout;
