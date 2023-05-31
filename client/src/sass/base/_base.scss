@@ -27,7 +27,7 @@ body {
 .container {
   max-width: 100%;
   background-color: $container-background;
-  // padding: 0 8rem;
+  padding: 0 8rem;
 
   @include respond(phone) {
     padding: 0 2rem;
