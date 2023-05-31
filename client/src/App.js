@@ -13,6 +13,8 @@ import './sass/main.scss'
 
 function App() {
   return (
+    <div>
+
     <Router>
       <Layout>
         <Routes>
@@ -23,10 +25,10 @@ function App() {
         <Route path='/schedule' element={ <Schedule/> } />
         <Route path='/travel' element={ <Travel/> } />
         <Route path='/weddingparty' element={ <WeddingParty/> } />
-
         </Routes>
       </Layout>
     </Router>
+    </div>
   );
 }
 

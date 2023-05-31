@@ -1,3 +1,6 @@
+$container-background: rgb(239, 223, 223);
+
+
 // SASS that applies to everything
 *,
 *::after,
@@ -17,8 +20,13 @@ body {
   box-sizing: border-box;
 }
 
+#root {
+  height: 100%;
+}
+
 .container {
-  max-width: 114rem;
+  max-width: 100%;
+  background-color: $container-background;
   padding: 0 8rem;
 
   @include respond(phone) {
