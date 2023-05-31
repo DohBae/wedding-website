@@ -9,12 +9,14 @@ const app = express();
 
 // routes import
 const dogRoutes = require('./routes/dogRoutes');
+const rsvpRouter = require('./routes/rsvp');
 
 // middleware setup
 app.use(morgan(ENVIROMENT));
 app.use(bodyParser.json());
 
 app.use('/dogs', dogRoutes);
+app.use('/rsvp', rsvpRouter)
 
 
 app.get('/', (req, res) => {
