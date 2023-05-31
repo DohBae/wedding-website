@@ -251,5 +251,3 @@ const RSVPForm = () => {
   );
 };
 export default RSVPForm;
-
-
